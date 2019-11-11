@@ -1,0 +1,37 @@
+---
+
+# if one key and one value
+- students: anthony
+
+
+# if one key and many values
+- students: 
+  - anthony
+  - sarath
+  - mohan
+  - prathap
+
+#  if one key and many values and each value as key has no of values
+
+- students: 
+  - name: anthony
+    phno: 6161616161
+    email: anthony@gmail.com
+    address: kphb
+  - name: sarath 
+    phno: 7171717171
+    email: sarath@gmail.com
+    address: kphb
+  - name: mohan 
+    phno: 7171717171
+    email: mohan@gmail.com
+    address: kphb
+
+  - name: prathap 
+    phno: 7171717171
+    email: prathap@gmail.com
+    address: kphb
+
+  
+
+

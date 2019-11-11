@@ -88,3 +88,38 @@ my node config has completed.
 
 
 ```
+
+# Ansible
+
+* Ansible is a simple IT automation tool that makes your applications and  systems easier to deploy.
+
+* It supports in configuration management
+* It uses playbooks(yaml) to  create  Infrastructure  as code and deploy applications in various environments.
+
+
+#  What ansible does?
+
+* Provisioning
+  * create a infra for application
+     * install softwares
+     * create file & folders
+     * create users & groups
+     * change config files ...
+  
+* Change Management 
+  * change infra for application.
+     * updates
+     * change 
+     * remove
+* Automation
+  * if do action on all nodes at time is nothing automation.
+
+* Orchestration
+  * ordering our infra
+
+* Configuration of servers
+  * setup of software
+
+* Application deployment
+  *  we can able to deploy applications on servers on any env.
+
