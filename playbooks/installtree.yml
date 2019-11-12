@@ -6,3 +6,16 @@
     apt:
       name: tree
       state: present
+  - name:  des install wget
+    apt:
+      name: wget
+      state: present
+  - name: des install apache2
+    apt:
+      name: apache2
+      state: present
+  - name: des  start apache2 service
+    service:
+       name: apache2
+       state: started
+       enabled: yes
