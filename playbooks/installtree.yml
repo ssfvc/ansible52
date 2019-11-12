@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name:  iam install tree
+    apt:
+      name: tree
+      state: present
