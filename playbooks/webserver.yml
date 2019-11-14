@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: install webserver on Ubuntu16
+    apt:
+      name: apache2
+      state: present
+    when: ansible_os_family =="Debian"
+
+  - name : install  webserver on Redhat8
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family =="RedHat"
+
+
