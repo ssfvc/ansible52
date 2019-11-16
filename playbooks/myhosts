@@ -27,8 +27,6 @@
 172.31.90.85
 
 
-[webservers:vars]
-webserveronubuntu=apache2
-webserveronredhat=httpd
+
 
 
