@@ -1,0 +1,6 @@
+---
+
+- name: create a files
+  file:
+    path: /home/maha/mahatestfile.txt
+    state:  touch
