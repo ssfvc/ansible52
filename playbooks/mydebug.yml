@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: execute linux command
+    command: hostname -f
+    register: myresult
+    when: ansible_os_family =="Debian"
+
+  - name: display myresult 
+    debug:
+      msg: "{{myresult}}"
+    when: ansible_os_family =="Debian"
