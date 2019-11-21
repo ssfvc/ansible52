@@ -18,7 +18,7 @@
     when: ansible_os_family =="RedHat"
 
 
-  handler:
+  handlers:
   - name: restartwebserver
     service:
       name: httpd
