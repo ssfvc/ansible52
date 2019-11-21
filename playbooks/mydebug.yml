@@ -1,23 +1,23 @@
 ---
-- hosts: webservers
+- hosts: 172.31.90.85
   become: yes
   tasks:
   - name: execute linux command
     command: hostname -f
     register: myresult
-    when: ansible_os_family =="Debian"
+
 
   - name: display myresult 
     debug:
       msg: "{{myresult}}"
-    when: ansible_os_family =="Debian"
+   
 
   - name: install git
     apt:
       name: git
       state: present
     when: myresult.stderr ==""
-    when: ansible_os_family =="Debian"
+   
     
 
   - name: install tree
@@ -25,4 +25,4 @@
      name: tree
      state: present
     when: myresult.stderr !=""
-    when: ansible_os_family =="Debian"
+
