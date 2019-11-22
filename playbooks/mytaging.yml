@@ -1,0 +1,23 @@
+---
+- hosts: 172.31.90.85
+  become: yes
+  tasks:
+  - name: install git
+    apt:
+      name: git
+      state: present
+    tags: git
+
+  - name: install wget
+    apt:
+      name: wget
+      state: present
+    tags: wget
+
+  - name: install tree
+    apt:
+      name: tree
+      state: present
+    tags: tree
+
+  # i want to execute first task only
