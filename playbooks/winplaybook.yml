@@ -3,3 +3,7 @@
   tasks: 
   - name: ping my win hosts
     win_ping:
+  - name: Install git
+    win_chocolatey:
+     name: git
+     state: present
