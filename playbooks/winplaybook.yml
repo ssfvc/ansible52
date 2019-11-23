@@ -1,0 +1,5 @@
+---
+hosts: win
+tasks: 
+- name: ping my win hosts
+  win_ping:
