@@ -7,3 +7,7 @@
     win_chocolatey:
      name: git
      state: present
+  - name: Install firefox
+    win_chocolatey:
+     name: Firefox
+     state: present
