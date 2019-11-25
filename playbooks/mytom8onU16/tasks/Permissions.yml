@@ -1,0 +1,52 @@
+---
+- name: chgrp
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    group: tomcat
+
+    
+- name: chmod g+r conf
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    recurse: yes
+    group: tomcat
+    mode: g+r
+
+- name: chmod g+x conf
+  file: 
+    path: /opt/tomcat/conf
+    state: directory
+    group: tomcat
+    mode: g+x
+
+- name: chown webapps
+  file: 
+    path: /opt/tomcat/webapps/
+    state: directory
+    recurse: yes
+    owner: tomcat
+- name: chown work
+  file: 
+    path: /opt/tomcat/work/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: chown temp
+  file: 
+    path: /opt/tomcat/temp/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: chown logs
+  file: 
+    path: /opt/tomcat/logs/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+
