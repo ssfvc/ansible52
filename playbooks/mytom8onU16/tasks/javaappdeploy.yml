@@ -1,6 +1,8 @@
 ---
 - name: deploy java application
   get_url:
-    url: https://maha8899.s3.amazonaws.com/mahaLogin.war
+    url: http://54.191.4.33:8081/artifactory/ssSIT/9/target/mahaLogin-1.0.war
     dest: /opt/tomcat/webapps/mahaLogin.war
+    username: admin
+    password: password
     force_basic_auth: yes
