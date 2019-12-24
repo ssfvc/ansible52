@@ -1,6 +1,6 @@
 ---
 - name: download tom8
   get_url:
-    url: https://www.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz
     dest: /home/maha/apache-tomcat-8.5.47.tar.gz
     force_basic_auth: yes
